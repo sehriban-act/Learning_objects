@@ -1,0 +1,19 @@
+- Programs are simply assigning memory, for example assigning a value to a variable and then running a function for the program to do something with those variables.That's all programs are.
+- Any time we run code in JavaScript, it's always going to be part of an execution context.
+- The first thing the JavaScript engine does is to create **global execution context**.And it gives you two things.First thing is a **global object**.And the other thing is that **this keyword** in JavaScript,
+- When code is run on the JavaScript engine, A global execution context is created. And when you run a function, a new execution context is added, a function execution context. And we start running our code until everything gets popped up the stack and all of our code is run.
+- In javascript our lexical scope(available data + variables where the function was defined) determines our available variables. Not where the function is called(dynamic scope)
+- Hoisting happens on every execution context. Any time when you run a function, a new execution context gets created and we have to go through the `creation phase` and `execution phase` again.
+- Programs are simply assigning memory, for example assigning a value to a variable and then running a function for the program to do something with those variables.That's all programs are.
+- each execution context has its own variable environment.
+- lexically means where the function is written.
+- leakage of global variables.
+- `this` is the object that the function is a property of
+- this is dynamically scoped
+- two main benefits:
+  - 1: gives methods access to their object
+  - 2: execute same code for multiple objects
+- arrow function does not rebind `this` and inherits `this` from parent
+- call and apply are useful for borrowing methods from an object, while bind is useful for us to call functions later on with a certain context or certain this keyword.
+- Context is more about object based context, what's the value of the this keyword, which is a reference to the object that owns that current executing code.
+- `Context` is most often determined by how a function is invoked with the value of this keyword and scope refers to the visibility of variables.
